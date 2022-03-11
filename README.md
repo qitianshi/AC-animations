@@ -6,8 +6,8 @@ I'm working on it. 😵‍💫
 
 ## Get started
 If you just want to use my finished videos, links will be added here
-soon. First, make sure you take a look at the licensing requirements for
-videos.
+soon. First, make sure you take a look at the [licensing requirements
+for videos](#license).
 
 You can also clone this repo if you want to edit my code (you'll need
 Python 3.10 and matplotlib):
