@@ -1,10 +1,7 @@
 # Phasor animations
 Short animations demonstrating phasors and phasor properties.
 
-## Status
-I'm working on it. 😵‍💫
-
-## Get started
+## Start here
 If you just want to use my finished videos, links will be added here
 soon. First, make sure you take a look at the [licensing requirements
 for videos](#license).
@@ -15,6 +12,9 @@ Python 3.10 and matplotlib):
 ```
 git clone https://github.com/qitianshi/phasor-animations.git
 ```
+
+## Status
+I'm working on it. 😵‍💫
 
 ## License
 Videos are licensed under the [Creative Commons
