@@ -2,8 +2,8 @@
 Short animations demonstrating phasors and phasor properties.
 
 ## Start here
-If you just want to use my finished videos, [see the 'gif'
-folder](https://github.com/qitianshi/phasor-animations/tree/main/gif).
+If you just want to use my finished videos, [check out the 'videos'
+folder](https://github.com/qitianshi/phasor-animations/tree/main/videos).
 *More will be added soon.* First, make sure you take a look at the
 [licensing requirements for videos](#license).
 

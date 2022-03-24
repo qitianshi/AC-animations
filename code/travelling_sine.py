@@ -53,6 +53,6 @@ def _anim(i):
 # Animate
 anim = FuncAnimation(fig, _anim, init_func=_init, frames=100, interval=16,
                      blit=True)
-anim.save('gif/travelling_sine.gif', writer='imagemagick')
+anim.save('videos/ac/travelling_sine.gif', writer='imagemagick')
 
 # plt.show()
