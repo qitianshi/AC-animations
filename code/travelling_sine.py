@@ -12,8 +12,12 @@ import numpy as np
 X_MAX = 4
 
 fig = plt.figure()
-ax = plt.axes(xlim=(0, X_MAX), ylim=(-1.5, 1.5))
+ax = fig.add_subplot(1, 1, 1)
 line, = ax.plot([], [])
+
+# Limits
+ax.set_xlim((0, X_MAX))
+ax.set_ylim((-1.5, 1.5))
 
 # Ticks
 ax.set_xticks([])
