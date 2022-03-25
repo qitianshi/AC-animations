@@ -74,7 +74,7 @@ def _anim(i):
     y = np.sin(2 * np.pi * (x - 0.01 * i))
     line.set_data(x, y)
 
-    global arrow
+    global arrow                                           #pylint: disable=all
     arrow.remove()
     arrow = ax_img.arrow(
         *_rotate_arrow(
