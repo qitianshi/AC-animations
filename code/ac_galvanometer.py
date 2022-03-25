@@ -9,6 +9,8 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
 
+import arrows
+
 
 X_MAX = 4
 
@@ -43,19 +45,6 @@ ax_sine.plot(0, 1, ls='', marker=6, ms=5, color='k',
         transform=ax_sine.get_xaxis_transform(), clip_on=False)
 
 
-def _rotate_arrow(xcenter, ycenter, length, rotation) -> tuple[float]:
-
-    half_length = length / 2
-    rad_angle = np.radians(rotation)
-
-    return (
-        xcenter - half_length * np.sin(rad_angle),
-        ycenter - half_length * np.cos(rad_angle),
-        length * np.sin(rad_angle),
-        length * np.cos(rad_angle)
-    )
-
-
 # Circuit diagram
 image = mpimg.imread('resources/ac_galvanometer.png')
 im = ax_img.imshow(image)
@@ -77,7 +66,7 @@ def _anim(i):
     global arrow                                           #pylint: disable=all
     arrow.remove()
     arrow = ax_img.arrow(
-        *_rotate_arrow(
+        *arrows.rotate_center(
             414, 1050, 160, -1 * (np.sin((i / 100) * 2 * np.pi) * 60 + 180)
         ),
         fc='k', ec='k',
