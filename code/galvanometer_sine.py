@@ -78,6 +78,6 @@ def _anim(i):
 # Animate
 anim = FuncAnimation(fig, _anim, init_func=_init, frames=100, interval=16,
                      blit=True)
-anim.save('videos/ac/ac_galvanometer.gif', writer='imagemagick')
+anim.save('videos/ac/galvanometer_sine.gif', writer='imagemagick')
 
 # plt.show()
