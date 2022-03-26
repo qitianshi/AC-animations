@@ -38,7 +38,7 @@ ax_sine.set_xlabel('t', loc='right')
 # Vertical left and horizontal center axes with arrowheads.
 ax_sine.spines['right'].set_visible(False)
 ax_sine.spines['top'].set_visible(False)
-ax_sine.spines['bottom'].set_position('center')
+ax_sine.spines['bottom'].set_position('zero')
 ax_sine.plot(1, 0, ls='', marker=5, ms=5, color='k',
              transform=ax_sine.get_yaxis_transform(), clip_on=False)
 ax_sine.plot(0, 1, ls='', marker=6, ms=5, color='k',
@@ -46,10 +46,11 @@ ax_sine.plot(0, 1, ls='', marker=6, ms=5, color='k',
 
 # Axes for phasor
 ax_phasor.set_ylim((-1.5, 1.5))
+ax_phasor.set_xlim((-1.1, 1.1))
 ax_phasor.spines['right'].set_visible(False)
 ax_phasor.spines['top'].set_visible(False)
-ax_phasor.spines['left'].set_position('center')
-ax_phasor.spines['bottom'].set_position('center')
+ax_phasor.spines['left'].set_position('zero')
+ax_phasor.spines['bottom'].set_position('zero')
 ax_phasor.plot(1, 0, ls='', marker=5, ms=5, color='k',
                transform=ax_phasor.get_yaxis_transform(), clip_on=False)
 ax_phasor.plot(0, 1, ls='', marker=6, ms=5, color='k',
