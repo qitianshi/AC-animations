@@ -68,7 +68,7 @@ def _anim(i):
     arrow.remove()
     arrow = ax_img.arrow(
         *arrows.rotate_center(
-            414, 1050, 160, -1 * (60 if y[0] < 0 else -60) - 180
+            414, 1050, 160, (y[0] * 60) - 180
         ),
         fc='k', ec='k',
         head_width=30, head_length=60, length_includes_head=True)
