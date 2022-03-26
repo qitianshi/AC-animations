@@ -31,7 +31,7 @@ ax.set_xlabel('t', loc='right')
 # Vertical left and horizontal center axes with arrowheads.
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
-ax.spines['bottom'].set_position('center')
+ax.spines['bottom'].set_position('zero')
 ax.plot(1, 0, ls='', marker=5, ms=5, color='k',
         transform=ax.get_yaxis_transform(), clip_on=False)
 ax.plot(0, 1, ls='', marker=6, ms=5, color='k',
