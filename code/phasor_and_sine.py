@@ -72,6 +72,8 @@ horiz_connector = ConnectionPatch(
     ls='--', edgecolor='darkgray'
 )
 ax_sine.add_artist(horiz_connector)
+phasor_x_resolve = ax_phasor.arrow(0, 0, 0, 0)
+phasor_y_resolve = ax_phasor.arrow(0, 0, 0, 0)
 
 
 def _init():
@@ -110,12 +112,28 @@ def _anim(i):
     )
     ax_sine.add_patch(horiz_connector)
 
-    return (line, phasor, horiz_connector)
+    global phasor_x_resolve
+    phasor_x_resolve.remove()
+    phasor_x_resolve = ax_phasor.arrow(
+        0, 0, phasor_tail[0], 0,
+        fc='darkgray', ec='darkgray', ls=':',
+        head_width=0.05, head_length=0.1, length_includes_head=True
+    )
+
+    global phasor_y_resolve
+    phasor_y_resolve.remove()
+    phasor_y_resolve = ax_phasor.arrow(
+        phasor_tail[0], 0, 0, phasor_tail[1],
+        fc='darkgray', ec='darkgray', ls=':',
+        head_width=0.05, head_length=0.1, length_includes_head=True
+    )
+
+    return (line, phasor, horiz_connector, phasor_x_resolve, phasor_y_resolve)
 
 
 # Animate
 anim = FuncAnimation(fig, _anim, init_func=_init, frames=100, interval=16,
                      blit=True)
-anim.save('videos/ac/phasor_and_sine.gif', writer='imagemagick')
+anim.save('videos/ac/phasor_and_sine_resolved.gif', writer='imagemagick')
 
 # plt.show()
