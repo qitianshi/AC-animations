@@ -147,7 +147,7 @@ def _anim(i):
     )
     ax_sine.add_patch(horiz_connector2)
 
-    return (line1, phasor1, horiz_connector1, phasor2, horiz_connector2)
+    return (line1, line2, phasor1, horiz_connector1, phasor2, horiz_connector2)
 
 
 # Animate
