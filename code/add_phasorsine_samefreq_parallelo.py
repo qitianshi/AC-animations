@@ -1,4 +1,6 @@
-"""Adding two travelling sine waves and phasors with phase diffs."""
+"""Adding two travelling sine waves and phasors with phase diffs by
+parallelogram vector addition.
+"""
 
 # Copyright 2022 Qi Tianshi.
 # Licensed under GNU GPL v3.0.
