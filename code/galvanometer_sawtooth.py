@@ -1,4 +1,4 @@
-"""Travelling square AC wave with galvanometer."""
+"""Travelling sawtooth AC wave with galvanometer."""
 
 # Copyright 2022 Qi Tianshi.
 # Licensed under GNU GPL v3.0.
