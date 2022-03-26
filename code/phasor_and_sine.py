@@ -100,7 +100,7 @@ def _anim(i):
     phasor.remove()
     phasor = ax_phasor.arrow(
         *phasor_coordinates,
-        fc='k', ec='k',
+        fc='tab:blue', ec='tab:blue',
         head_width=0.05, head_length=0.1, length_includes_head=True
     )
 
