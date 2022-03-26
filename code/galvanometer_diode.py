@@ -1,4 +1,4 @@
-"""Travelling sinusoidal AC wave with galvanometer."""
+"""Travelling clipped AC wave with galvanometer."""
 
 # Copyright 2022 Qi Tianshi.
 # Licensed under GNU GPL v3.0.
