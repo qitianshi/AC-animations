@@ -31,9 +31,9 @@ git clone https://github.com/qitianshi/AC-animations.git
 
 ## Status & Contributing
 Most of what I've planned is already up. I might add more in the future. In the
-meantime, you're more than welcome to submit pull requests to add new stuff, or
-request stuff on the
-[Issues](https://github.com/qitianshi/AC-animations/issues) tab.
+meantime, you're more than welcome to submit pull requests to add new stuff (be
+warned: the code is a *mess*; it was a quick bodge job), or request stuff on
+the [Issues](https://github.com/qitianshi/AC-animations/issues) tab.
 
 ## License
 Videos are licensed under the [Creative Commons
