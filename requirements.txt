@@ -1,5 +1,5 @@
 autopep8==1.6.0
 matplotlib==3.5.1
-numpy==1.22.3
+numpy==1.22.4
 pylint==2.13.2
 scipy==1.8.0
